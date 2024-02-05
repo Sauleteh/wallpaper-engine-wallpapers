@@ -1,2 +1,3 @@
-# wallpaper-engine-wallpapers
-A collection of wallpapers made by me for the application Wallpaper Engine
+# Wallpaper Engine: Wallpapers
+## Snake Enhanced
+Originally from TODO, this updated version allows you to change a lot of variables as well as audio responsive integration.
