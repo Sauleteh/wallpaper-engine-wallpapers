@@ -1,0 +1,340 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Modified and enhanced version of Snake wallpaper. Original version by Jacox98: https://steamcommunity.com/sharedfiles/filedetails/?id=852954194\n\nThis version adds music recognition and a variety of options to customize the wallpaper, including colors, shapes and much more.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"cambio_color_constante_frecuencia" : 
+			{
+				"condition" : "!cambio_color_depende_audio.value && color_objeto_audio_multicolor.value",
+				"fraction" : false,
+				"index" : 23,
+				"max" : 30,
+				"min" : 1,
+				"order" : 123,
+				"text" : "Frequency of color change",
+				"type" : "slider",
+				"value" : 1
+			},
+			"cambio_color_depende_audio" : 
+			{
+				"condition" : "color_objeto_audio_multicolor.value",
+				"index" : 22,
+				"order" : 122,
+				"text" : "Color frequency depending on the sound",
+				"type" : "bool",
+				"value" : false
+			},
+			"color_objeto_audio" : 
+			{
+				"condition" : "!color_objeto_audio_multicolor.value",
+				"index" : 25,
+				"order" : 125,
+				"text" : "Object color when there is audio",
+				"type" : "color",
+				"value" : "1 1 0"
+			},
+			"color_objeto_audio_multicolor" : 
+			{
+				"index" : 21,
+				"order" : 121,
+				"text" : "Rainbow object color when there is audio",
+				"type" : "bool",
+				"value" : false
+			},
+			"color_objeto_deteccion" : 
+			{
+				"index" : 19,
+				"order" : 119,
+				"text" : "Object detection color",
+				"type" : "color",
+				"value" : "1 0 0"
+			},
+			"color_objeto_mouse" : 
+			{
+				"index" : 20,
+				"order" : 120,
+				"text" : "Object color when mouse down",
+				"type" : "color",
+				"value" : "0 1 0"
+			},
+			"color_objeto_normal" : 
+			{
+				"index" : 18,
+				"order" : 118,
+				"text" : "Object idle color",
+				"type" : "color",
+				"value" : "0 0.66666666666666666666666666666667 1"
+			},
+			"frecuencia_movimiento_variable_audio" : 
+			{
+				"fraction" : false,
+				"index" : 7,
+				"max" : 2000,
+				"min" : 10,
+				"order" : 107,
+				"text" : "Random position frequency when there is sound",
+				"type" : "slider",
+				"value" : 200
+			},
+			"frecuencia_rango" : 
+			{
+				"fraction" : false,
+				"index" : 1,
+				"max" : 62,
+				"min" : 1,
+				"order" : 101,
+				"text" : "Frequency range",
+				"type" : "slider",
+				"value" : 1
+			},
+			"frecuencia_rango_principio" : 
+			{
+				"fraction" : false,
+				"index" : 2,
+				"max" : 62,
+				"min" : 0,
+				"order" : 102,
+				"text" : "Frequency range start",
+				"type" : "slider",
+				"value" : 0
+			},
+			"grado_union_audio" : 
+			{
+				"fraction" : true,
+				"index" : 9,
+				"max" : 0.5,
+				"min" : 0.001,
+				"order" : 109,
+				"precision" : 4,
+				"step" : 0.001,
+				"text" : "Object's dispersion when there is sound (less=more dispersion)",
+				"type" : "slider",
+				"value" : 0.01
+			},
+			"grado_union_mouse" : 
+			{
+				"fraction" : true,
+				"index" : 10,
+				"max" : 0.5,
+				"min" : 0.001,
+				"order" : 110,
+				"precision" : 4,
+				"step" : 0.001,
+				"text" : "Object's dispersion when using mouse (less=more dispersion)",
+				"type" : "slider",
+				"value" : 0.03
+			},
+			"limite_deteccion" : 
+			{
+				"fraction" : false,
+				"index" : 5,
+				"max" : 200,
+				"min" : 1,
+				"order" : 105,
+				"text" : "Detection limit between objects",
+				"type" : "slider",
+				"value" : 50
+			},
+			"longitud_cadena" : 
+			{
+				"fraction" : false,
+				"index" : 4,
+				"max" : 100,
+				"min" : 1,
+				"order" : 104,
+				"text" : "Length of object's tail",
+				"type" : "slider",
+				"value" : 8
+			},
+			"multiplicador_cambio_multicolor_audio" : 
+			{
+				"condition" : "color_objeto_audio_multicolor.value && cambio_color_depende_audio.value",
+				"fraction" : true,
+				"index" : 24,
+				"max" : 10,
+				"min" : 0.01,
+				"order" : 124,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Color change multiplier",
+				"type" : "slider",
+				"value" : 0.5
+			},
+			"multiplicador_fondo_audio" : 
+			{
+				"fraction" : true,
+				"index" : 8,
+				"max" : 10,
+				"min" : 0,
+				"order" : 108,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Background flash multiplier when there is sound",
+				"type" : "slider",
+				"value" : 2
+			},
+			"multiplicador_impulso_audio" : 
+			{
+				"fraction" : true,
+				"index" : 12,
+				"max" : 1,
+				"min" : 0.01,
+				"order" : 112,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Impulse multiplier when there is audio",
+				"type" : "slider",
+				"value" : 0.1
+			},
+			"multiplicador_impulso_normal" : 
+			{
+				"fraction" : true,
+				"index" : 11,
+				"max" : 1,
+				"min" : 0.01,
+				"order" : 111,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Impulse multiplier when idle",
+				"type" : "slider",
+				"value" : 0.1
+			},
+			"multiplicador_limite_audio" : 
+			{
+				"fraction" : true,
+				"index" : 6,
+				"max" : 5,
+				"min" : 1,
+				"order" : 106,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Detection limit multiplier when there is sound",
+				"type" : "slider",
+				"value" : 1.5
+			},
+			"multiplicador_radio_interior_estrella" : 
+			{
+				"condition" : "tipo_objeto.value === 'star'",
+				"fraction" : true,
+				"index" : 15,
+				"max" : 0.9,
+				"min" : 0.1,
+				"order" : 115,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Star inner radius multiplier",
+				"type" : "slider",
+				"value" : 0.4
+			},
+			"num_cadenas" : 
+			{
+				"fraction" : false,
+				"index" : 3,
+				"max" : 400,
+				"min" : 1,
+				"order" : 103,
+				"text" : "Number of moving objects",
+				"type" : "slider",
+				"value" : 50
+			},
+			"numero_pinchos" : 
+			{
+				"condition" : "tipo_objeto.value === 'star'",
+				"fraction" : false,
+				"index" : 14,
+				"max" : 20,
+				"min" : 5,
+				"order" : 114,
+				"text" : "Number of star's spikes",
+				"type" : "slider",
+				"value" : 5
+			},
+			"radio_objeto" : 
+			{
+				"fraction" : true,
+				"index" : 17,
+				"max" : 20,
+				"min" : 0.1,
+				"order" : 117,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Object radius",
+				"type" : "slider",
+				"value" : 1
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"sensibilidad_audio" : 
+			{
+				"fraction" : true,
+				"index" : 0,
+				"max" : 10,
+				"min" : 0,
+				"order" : 100,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Sound sensitivity",
+				"type" : "slider",
+				"value" : 1.6
+			},
+			"texto_custom" : 
+			{
+				"condition" : "tipo_objeto.value === 'text'",
+				"index" : 16,
+				"order" : 116,
+				"text" : "Text to display",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"tipo_objeto" : 
+			{
+				"index" : 13,
+				"options" : 
+				[
+					{
+						"label" : "Square",
+						"value" : "square"
+					},
+					{
+						"label" : "Circle",
+						"value" : "circle"
+					},
+					{
+						"label" : "Triangle",
+						"value" : "triangle"
+					},
+					{
+						"label" : "Star",
+						"value" : "star"
+					},
+					{
+						"label" : "Custom text",
+						"value" : "text"
+					}
+				],
+				"order" : 113,
+				"text" : "Object type",
+				"type" : "combo",
+				"value" : "square"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.jpg",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"tags" : [ "Abstract" ],
+	"title" : "Snake Enhanced",
+	"type" : "web",
+	"version" : 1,
+	"workshopid" : "3291443171",
+	"workshopurl" : "steam://url/CommunityFilePage/3291443171"
+}
