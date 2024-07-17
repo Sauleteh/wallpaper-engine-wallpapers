@@ -1,3 +1,4 @@
 # Wallpaper Engine: Wallpapers
 ## Snake Enhanced
-Originally from TODO, this updated version allows you to change a lot of variables as well as audio responsive integration.
+Modified version of Snake wallpaper by Jacox98, modification made by ElMineToFlama.
+You can get the wallpaper here: https://steamcommunity.com/sharedfiles/filedetails/?id=3291443171
